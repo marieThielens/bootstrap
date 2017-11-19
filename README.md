@@ -26,13 +26,17 @@
         // js de bootstrap
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
- ####__Prise en main__
+ #### __Prise en main__
  
  + Bootstrap fonctionne avec un système de classes. C'est les classes qui "prennent la place du css". Par exemple si je veux mettre mon texte en rouge
           
         <p class="red">La classe red met le texte en rouge<p>
  
- ####__Liens utile__   
+ + Bootstrap fonctionne avec un système de colonne(de grille)
+    + Il considère que l'acran fait 12 colonnes(grilles). Et cela pour n'importe quel écran (ordi, gsm, etc).
+    + Ouvrez le fichier 1LaBaseDesGrilles.html pour commencer la découverte de bootstrap.
+ 
+ #### __Liens utile__   
  
  + [openClassrooms](https://openclassrooms.com/courses/prenez-en-main-bootstrap/mise-en-route-8)
  + [w3schools](https://www.w3schools.com/bootstrap/default.asp)
