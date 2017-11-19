@@ -32,7 +32,7 @@
           
         <p class="red">La classe red met le texte en rouge<p>
  
- + Bootstrap fonctionne avec un système de colonne(de grille)
+ + Bootstrap fonctionne avec un système de colonnes (de grilles)
     + Il considère que l'acran fait 12 colonnes(grilles). Et cela pour n'importe quel écran (ordi, gsm, etc).
     + Ouvrez le fichier 1LaBaseDesGrilles.html pour commencer la découverte de bootstrap.
  
