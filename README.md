@@ -40,3 +40,4 @@
  
  + [openClassrooms](https://openclassrooms.com/courses/prenez-en-main-bootstrap/mise-en-route-8)
  + [w3schools](https://www.w3schools.com/bootstrap/default.asp)
+ + [bootsnipp](https://bootsnipp.com/) Le codepen version bootstrap
