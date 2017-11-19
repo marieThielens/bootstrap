@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap - Button</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- button -->
+        <h1>Les styles de boutons :</h1>
+        <button class="btn btn-default">Default</button><!-- btn-default = blanc-->
+        <button class="btn btn-primary">Primary</button><!-- bleu-->
+        <button class="btn btn-success">Success</button><!-- vert -->
+        <button class="btn btn-info">Info</button><!-- bleu clair-->
+        <button class="btn btn-warning">Warning</button><!-- Orange -->
+        <button class="btn btn-danger">Danger</button><!-- Rouge -->
+        <button class="btn btn-link">Link</button><!-- un lien -->
+        
+        
+        <!-- Taille des boutons -->
+        <h1>Les tailles de boutons :</h1>
+        <button type="button" class="btn btn-primary btn-xs">XSmall</button><!--btn-xs: Très petit-->
+        <button type="button" class="btn btn-primary btn-sm">Small</button><!-- btn-sm: Petit-->
+        <button type="button" class="btn btn-primary btn-md">Medium</button><!-- btn-md: Moyen -->
+        <button type="button" class="btn btn-primary btn-lg">Large</button><!-- btn-lg: Large-->
+        <!-- btn-block -->
+        <h1>Les boutons block :</h1>
+        <div class="col-md-6">
+            <button type="button" class="btn btn-primary btn-block">Block</button><!-- Prend toute la place-->
+        </div>
+        <!-- button states -->
+        <h1 class="clear">L'état des boutons :</h1>
+        <button type="button" class="btn btn-primary active">Active</button>
+        <button type="button" class="btn btn-primary disabled">Disabled</button>
+        <!-- btn-group -->
+        <h1>Les groupes de boutons :</h1>
+        <h2>Horizontal :</h2>
+        <div class="btn-group"><!-- btn-group : pour grouper les boutons.(les coller ensemble)-->
+            <button type="button" class="btn btn-primary">HTML</button>
+            <button type="button" class="btn btn-primary">CSS</button>
+            <button type="button" class="btn btn-primary">Javascript</button>
+        </div>
+        <!-- attention btn-group-justified ne fonctionne qu'avec des "<a>" -->
+        <h2>Justifié :</h2>
+        <div class="col-md-6">
+            <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-primary">HTML</a>
+                <a href="#" class="btn btn-primary">CSS</a>
+                <a href="#" class="btn btn-primary">Javascript</a>
+            </div>
+        </div>
+        <h2>Vertical :</h2>
+        <div class="btn-group-vertical"><!-- btn-group-vertical: classe qui groupe les boutons et les positionne en vertical -->
+            <button type="button" class="btn btn-primary">HTML</button>
+            <button type="button" class="btn btn-primary">CSS</button>
+            <button type="button" class="btn btn-primary">Javascript</button>
+        </div>
+        <!-- button-list -->
+        <h2>Liste :</h2>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">HTML</button>
+            <button type="button" class="btn btn-primary">CSS</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary " data-toggle="dropdown">
+					Javascript <span class="caret"></span>
+				</button>
+                <ul class="dropdown-menu"><!-- le contenu du menu déroulant-->
+                    <li><a href="#">jQuery</a></li>
+                    <li><a href="#">Angular</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

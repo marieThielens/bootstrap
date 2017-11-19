@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap - Alert</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="validate.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container">
+		<div class="panel panel-danger">
+			<div class="panel-heading">
+				<h1>Formulaire</h1>
+			</div>
+			<div class="panel-body">
+				<div class="form-horizontal">
+					<div class="col-md-5">
+						<div class="form-group has-feedback">
+							<span class="glyphicon glyphicon-user in-input"></span>
+							<input id="firstname" type="text" class="form-control glyph-input" placeholder="Nom de famille">
+							<span class="glyphicon form-control-feedback"></span>
+							<div class="error list-unstyled list-inline text-danger"></div>
+						</div>
+						<div class="form-group has-feedback">
+							<span class="glyphicon glyphicon-user in-input"></span> 
+							<input id="lastname" type="text" class="form-control glyph-input" placeholder="Prénom">
+							<span class="glyphicon form-control-feedback"></span>
+							<div class="error list-unstyled list-inline text-danger"></div>
+						</div>	
+					</div>
+					<div class="col-md-offset-2 col-md-5">
+						<div class="form-group has-feedback">
+							<span class="glyphicon glyphicon-lock in-input"></span>
+							<input id="password" type="password" class="form-control glyph-input" placeholder="Mot de passe">
+							<span class="glyphicon form-control-feedback"></span>
+							<div class="error list-unstyled list-inline text-danger"></div>
+						</div>
+						<div class="form-group has-feedback">
+							<span class="glyphicon glyphicon-lock in-input"></span>
+							<input id="confirm" type="password" class="form-control glyph-input" placeholder="Confirmation Mot de passe">
+							<span class="glyphicon form-control-feedback"></span>
+							<div class="error list-unstyled list-inline text-danger"></div>
+						</div>
+					</div>
+					<button id="submit" class="btn btn-danger disabled btn-block">Envoyer</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

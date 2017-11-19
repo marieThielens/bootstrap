@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap - Glyphicon</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.custom{
+			color: green;
+			font-size: 36px;
+		}
+		.in-form{
+			position:absolute;
+			padding:10px;
+		}
+		.glyph-inside{
+			padding-left:30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- glyphicon in paragraph -->
+		<h1>Dans un paragraphe :</h1>
+		<p>Ceci n'est pas une pomme <span class="glyphicon glyphicon-apple"></span></p>
+		<!-- in custom paragraph -->
+		<h1>Dans un paragraphe customisé :</h1>
+		<p class="custom">Ceci n'est pas une pomme <span class="glyphicon glyphicon-apple"></span></p>
+		<!-- in button -->
+		<h1>Dans un bouton :</h1>
+		<button class="btn btn-primary">
+			<span class="glyphicon glyphicon-home"></span> Home
+		</button>
+		<!-- in input -->
+		<h1>Dans un input :</h1>
+		<div class="col-md-4">
+			<span class="glyphicon glyphicon-search in-form"></span>
+			<input type="text" class="form-control glyph-inside" placeholder="Search">
+		</div>
+	</div>
+</body>
+</html>

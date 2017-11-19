@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap - Grid</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<style>
+
+        /*Contour du parent*/
+        div{
+           	border: 1px solid green; 
+        }
+        /*Les cases*/
+        		div div{
+			text-align: center; /*centrer le texte au milieu*/
+			border: 1px solid red; /*contours rouge*/
+			font-size: 25px; /*Taille du texte dans les cases*/
+			margin-bottom: 5px;
+		}
+		.un-douze{
+			width: 8.33333%; /*taille des cases "numéro"*/
+			float: left;
+		}
+		.no-border{
+			border: 0;
+		}
+		.no-margin-horizontal{
+			margin-left:-15px;
+			margin-right:-15px;	
+            padding:-25px;
+		}
+	</style>
+</head>
+<body class="no-margin-horizontal">
+
+	<div class="container-fluid no-margin-horizontal">
+	    <h3>Diviser la taille de votre css par 2 ? Bootsrap est ton ami</h3>
+	    <p>bootstrap: des classes, du responsive</p>
+		<h2>Bootsrap considère que l'écran fait 12 grilles :</h2>
+		<p></p>
+		<!-- étalon qui servira de repère  -->
+		<h2>La grille :</h2>
+		<div id="etalon" class="no-border">
+			<div class="un-douze">1</div>
+			<div class="un-douze">2</div>
+			<div class="un-douze">3</div>
+			<div class="un-douze">4</div>
+			<div class="un-douze">5</div>
+			<div class="un-douze">6</div>
+			<div class="un-douze">7</div>
+			<div class="un-douze">8</div>
+			<div class="un-douze">9</div>
+			<div class="un-douze">10</div>
+			<div class="un-douze">11</div>
+			<div class="un-douze">12</div>
+			<p> ?</p>
+		</div>
+		<!-- division en 2 colonnes égales -->
+		<h2>Exemples :</h2>
+		
+		<div class="col-xs-6">
+		<h4>col-xs-6</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur obcaecati, ullam, consequatur, voluptates fuga, odit impedit excepturi sequi placeat sed molestiae at eligendi officiis maxime. Laudantium impedit ipsum tempora!</p>
+		</div>
+				<div class="col-xs-6">
+		<h4>col-xs-6</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur obcaecati, ullam, consequatur, voluptates fuga, odit impedit excepturi sequi placeat sed molestiae at eligendi officiis maxime. Laudantium impedit ipsum tempora!</p>
+		</div>
+		
+		
+		<!-- autres exemples -->
+		<div class="col-xs-4">col-xs-4</div>
+		<div class="col-xs-4">col-xs-4</div>
+		<div class="col-xs-4">col-xs-4</div>
+		<div class="col-xs-3">col-xs-3</div>
+		<div class="col-xs-3">col-xs-3</div>
+		<div class="col-xs-3">col-xs-3</div>
+		<div class="col-xs-3">col-xs-3</div>
+		<div class="col-xs-3">col-xs-3</div>
+		<div class="col-xs-6">col-xs-6</div>
+		<div class="col-xs-3">col-xs-3</div>
+		<div class="col-xs-5">col-xs-5</div>
+		<div class="col-xs-3">col-xs-3</div>
+		<div class="col-xs-4">col-xs-4</div>
+		<!-- si pas suffisamment d'espace -->
+		<h3>Oups, la taille dépasse 12</h3>
+		<div class="col-md-5">col-md-5</div>
+		<div class="col-md-8">col-md-8</div>
+		<!-- retour à la ligne -->
+		<h3 class="clear">Faire un retour à la ligne</h3>
+		<!-- méthode 1 : clear -->
+		<h4>Méthode 1 (clear):</h4>
+		<div class="col-xs-5">col-md-5</div>
+		<div class="col-xs-5 clear">col-md-5</div>
+		<!-- méthode 2 : row -->
+		<h3 class="clear">Méthode 2 (row)</h3>
+		<div class="row no-border no-margin-horizontal">
+			<div class="col-xs-5">col-md-5</div>
+		</div>
+		<div class="row no-border no-margin-horizontal">
+			<div class="col-md-5">col-md-5</div>
+		</div>
+		<!-- offset -->
+		<h2 class="clear">Offset :</h2>
+		<div class="col-md-offset-2 col-md-4">col-md-4</div>
+		<div class="col-md-offset-3 col-md-3">col-md-3</div>
+		<!-- responsivity -->
+		<h2>Responsivity :</h2>
+		<!-- une seule classe -->
+		<h3>Une seule classe :</h3>
+		<div class="col-md-3">col-md-3</div>
+		<div class="col-md-3">col-md-3</div>
+		<div class="col-md-3">col-md-3</div>
+		<div class="col-md-3">col-md-3</div>
+		<!-- plusieurs classes -->
+		<h3>Plusieurs classes :</h3>
+		<div class="col-xs-12 col-sm-6 col-md-3">col-xs-12 col-sm-6 col-md-3</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">col-xs-12 col-sm-6 col-md-3</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">col-xs-12 col-sm-6 col-md-3</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">col-xs-12 col-sm-6 col-md-3</div>
+	</div>
+	
+	
+	    
+<!--    pour utiliser le grid de boostrap on va considérer qu'un ligne fait 12 colonnes. Si je veux la moitié, 6.-->
+   
+   
+<!--   lg=large md=ecran moyen sm=small xs:supêr petit . -->
+   
+<!--   On a mit deux valeurs/ C'est du responsive. Le premier avec un ecran moyen. Le 2eme, un ecran tout petit-->
+  
+<!--  6=moitié=> il y aura 2 colonnes-->
+   
+    <div class="col-md-6 col-xs-6"><!-- -->
+       <h2> gauche</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cum debitis, optio iusto explicabo earum fugit porro sed quisquam eum id maiores ea praesentium repellat fugiat perferendis eveniet sequi delectus?
+        </p>
+    </div>
+    
+    <div class="col-md-6 col-xs-6">
+       <h2>droite</h2>
+       <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cum debitis, optio iusto explicabo earum fugit porro sed quisquam eum id maiores ea praesentium repellat fugiat perferendis eveniet sequi delectus?
+        </p>
+    </div>
+    
+     <div class="col-md-6">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cum debitis, optio iusto explicabo earum fugit porro sed quisquam eum id maiores ea praesentium repellat fugiat perferendis eveniet sequi delectus?
+       <p> </p>
+    </div>
+    
+    <div class="col-md-6">
+      
+<!--      text-justify: que c'est aligné des deux cotés-->
+       <p class="text-justify">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cum debitis, optio iusto explicabo earum fugit porro sed quisquam eum id maiores ea praesentium repellat fugiat perferendis eveniet sequi delectus?
+        </p>
+    </div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+</body>
+</html>
