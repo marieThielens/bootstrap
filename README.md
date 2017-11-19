@@ -12,7 +12,7 @@
     
 #### __Installation__
 
-  + soit vous télécharger les fichiers source sur le site: https://getbootstrap.com/docs/3.3/getting-started/ 
+  + soit vous téléchargez les fichiers source sur le site: https://getbootstrap.com/docs/3.3/getting-started/ 
   + soit vous prenez le lien cdn en ligne 
             
         <head>
