@@ -1,6 +1,6 @@
-# bootstrap
+# Bootstrap
 
-## Vous créez des pages web et vous passez beaucoup (trop) de temps avec le CSS ?
+## Vous créez des pages web et vous passez beaucoup (trop) de temps avec le CSS et ses mediaqueries ?
 
 ### __Alors Bootstrap est fait pour vous !__
 
