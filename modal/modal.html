@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap - Modal</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+
+
+
+
+		<!-- bouton modal -->
+
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2" style="margin-left:50%; margin-top:50%;">cliquez-moi !</button>
+
+		<!-- Modal -->
+		<div id="myModal2" class="modal fade" data-backdrop="static">
+			<div class="modal-dialog">
+
+
+				<!-- contenu du modal-->
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<img src="images/taxe-sur-la-biere-anonyMOUSSE.jpg" style="width:40%; display:block; margin:auto;">
+					</div>
+					<div class="modal-body">
+						<p>“J'ai très envie de t'inviter à boire un verre mais je ne trouve pas le code source..”<br/>Ca te dit ?  </p>
+					</div>
+
+					<div class="modal-footer">
+						<!-- bouton content-->
+						<a class="btn btn-primary" href="mailto:https://thielens.marie@gmail.com" role="button">Mais quelle bonne idée !</a>
+						<!-- bouton normal-->
+						<a class="btn btn-primary" href="404.html" role="button">Bof-bof.</a>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
